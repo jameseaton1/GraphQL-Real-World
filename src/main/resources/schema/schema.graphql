@@ -1,0 +1,10 @@
+type MarketTeamMapping @key(fields: "id") @extends {
+    id: ID @external
+    team: [Team]
+}
+
+
+type Team {
+    id: ID
+    name: String
+}
